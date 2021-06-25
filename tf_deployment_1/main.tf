@@ -1,4 +1,3 @@
-
 ##################################################################################
 # DATA - Used to pull information from the provider and use it later as reference.
 ##################################################################################
@@ -159,7 +158,7 @@ resource "aws_elb" "web" {
 }
 
 
-
+# EC2 Instances
 resource "aws_instance" "nginx1" {
     ami                     = data.aws_ami.aws-linux.id
     instance_type           = "t2.micro"
