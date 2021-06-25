@@ -7,7 +7,7 @@ data "aws_availability_zones" "available" {}
 
 
 # Get available AMI images
-data "aws_ami" "aws-linux" {
+data "aws_ami" "aws-livpcnux" {
     most_recent = true
     owners = ["amazon"]
 
